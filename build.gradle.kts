@@ -12,6 +12,12 @@ java {
 	sourceCompatibility = JavaVersion.VERSION_17
 }
 
+jib {
+	container {
+		ports = listOf("8090")
+	}
+}
+
 repositories {
 	mavenCentral()
 }
