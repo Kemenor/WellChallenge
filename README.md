@@ -52,4 +52,37 @@ Finally, provide a small script that:
 4. Executes the goss test
 
 Ensure to use multiple meaningful commits in Git to create a trail of work. If there's anything note-worthy, add
-in-line comments. While not required, you may add comments on any design choice toe the main README file.
+in-line comments. While not required, you may add comments on any design choice to the main README file.
+
+
+Moving Random Notes to the README:
+
+1: Tooling Check
+1.1 nötiges Tooling auf Arbeitsgerät installiert.
+Da ich den PC vor kurzen neu aufgesetzt hatte, war das so gut wie alles.
+1.2 Project Tooling
+Überlegung ob Base Projekt mit JHipster erstellt werden soll, aber da es ein sehr simples Projekt ohne Datenbank ist, habe ich mich für Spring Initializer entschieden
+
+
+2: Doku Check, verschiedene bekannte Toolings nochmal überprüfen und neue Doku lesen
+2.1: Spring initializr: https://start.spring.io/
+Zum erstellen der Base App benutze ich Spring initializr, check welche Dependencies inkludiert werden können. Jib und Goss muss ich selber einbinden.
+Kurz überlegt ob ich weitere Sachen einbinden will die ich normalerweise benutzen würde, wie z.B. actuators, Lombok, testcontainers.
+Dagegen entschieden um das Projekt klein zu halten. -> KISS
+2.2 Jib Doku angeschaut
+https://github.com/GoogleContainerTools/jib
+https://github.com/GoogleContainerTools/jib/tree/master/jib-gradle-plugin
+https://cloud.google.com/java/getting-started/jib?hl=de
+spezifische Tutorial gefunden: https://www.baeldung.com/jib-dockerizing
+2.3 Goss Doku angeschaut
+https://github.com/goss-org/goss
+https://github.com/goss-org/goss/tree/master/extras/dgoss
+
+		added Goss to IntelliJ according to https://github.com/goss-org/goss#manually-editing-goss-files
+
+Goss habe ich local hinzugefügt da ich docker auch auf windows aufgesetzt hab. Wäre wahrscheinlich besser gewesen alles in WSL/Ubuntu aufzusetzen.
+
+
+Additional Links used:
+https://stackoverflow.com/questions/32073971/stopping-docker-containers-by-image-name-ubuntu
+https://stackoverflow.com/questions/21183088/how-can-i-wait-for-a-docker-container-to-be-up-and-running
