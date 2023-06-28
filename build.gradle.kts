@@ -13,6 +13,15 @@ java {
 }
 
 jib {
+	from {
+		image = "eclipse-temurin:17-jre"
+	}
+	to {
+		// this will automatically push latest
+		image = "kunkel/datetracker"
+		// add version tag
+		tags = mutableSetOf("$version")
+	}
 	container {
 		ports = listOf("8090")
 	}
