@@ -22,4 +22,4 @@
 		
 		added Goss to IntelliJ according to https://github.com/goss-org/goss#manually-editing-goss-files
 		
-resuming work
+Goss habe ich local hinzugefügt da ich docker auch auf windows aufgesetzt hab. Wäre wahrscheinlich besser gewesen alles in WSL/Ubuntu aufzusetzen.
