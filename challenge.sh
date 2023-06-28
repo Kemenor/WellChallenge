@@ -10,9 +10,10 @@ until [ "`docker inspect -f {{.State.Running}} $containerId`"=="true" ]; do
     sleep 2
 done;
 
-# add goss not done yet
-#goss --vars-inline "expected: 2023-06-26" validate
-echo "would be running tests"
+# use local install for testing
+#goss --vars-inline "expected: 2023-06-28" validate
+./goss --vars-inline "expected: 2023-06-28" validate
+
 
 #shutdown and remove the container at the end
 docker rm $(docker stop $(docker ps -a -q --filter ancestor=kunkel/datetracker --format="{{.ID}}"))

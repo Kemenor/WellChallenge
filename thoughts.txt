@@ -23,3 +23,8 @@
 		added Goss to IntelliJ according to https://github.com/goss-org/goss#manually-editing-goss-files
 		
 Goss habe ich local hinzugefügt da ich docker auch auf windows aufgesetzt hab. Wäre wahrscheinlich besser gewesen alles in WSL/Ubuntu aufzusetzen.
+
+
+Additional Links used:
+https://stackoverflow.com/questions/32073971/stopping-docker-containers-by-image-name-ubuntu
+https://stackoverflow.com/questions/21183088/how-can-i-wait-for-a-docker-container-to-be-up-and-running
